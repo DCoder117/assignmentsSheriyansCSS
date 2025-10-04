@@ -1,7 +1,3 @@
-@font-face {
-    font-family: f1;
-    src: url('./Another\ Danger\ -\ Demo.otf');
-}
 *{
     margin: 0;
     padding: 0;
@@ -11,27 +7,55 @@
 html, body{
     height: 100%;
     width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: #61daffc9;
 }
 
 #main{
     height: 100%;
     width: 100%;
-    background-image: url('https://i.pinimg.com/736x/be/bb/6d/bebb6d8cb3dd2d5fd9f077a8431e9332.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 20px 20px 20px;
+    gap: 30px;
 }
 
-#main h1{
-    padding-top: 30px;
-    font-family: f1;
-    font-size: 50px;
-    color: rgba(238, 237, 237, 0.89);
-    text-align: center;
+
+
+#card{
+    height: 400px;
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5)
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+
+img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
 }
 
 button{
     padding: 10px 20px;
-    background-color: transparent;
+    border-radius: 50px;
+    background-color: #61dafb;
     color: white;
-    margin: 20px 625px;
+}
+
+button:hover{
+    background-color: transparent;
+    border: 2px solid #61dafb;
+    color: #61dafb;
+    cursor: pointer;
+}
+
+p{
+    text-align: center;
 }
